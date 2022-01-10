@@ -28,13 +28,15 @@ export default function Home() {
         <title>Yeah!</title>
       </Head>
       <div className="Cards">
-        {cards.map(card => (
-          <Card 
-            key={card.id}
-            id={card['@id']} 
-            name={card['@name']}
-            image={card['_image']['url']} />
-        ))}
+        {cards.map(card => {
+          return(       
+            <Card 
+              key={card.id}
+              id={card['@id']} 
+              name={card['@name']}
+              imageURL={card['_image']['url'] || ""} />
+          )
+        })}
       </div>
     </>
   )
