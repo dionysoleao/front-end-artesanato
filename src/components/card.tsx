@@ -1,15 +1,13 @@
 interface CardProps{
     id: number;
-    image?: string | null;
+    imageURL?: string;
     name: string;
 }
 
 export function Card(props: CardProps){
     return(
         <div className="card">
-            <img src="" alt="" />
-            <h1 className="name"> {props.image} , {props.name}, {props.id}</h1>
+            <h1 className="data"> {props.imageURL && (props.imageURL)} , {props.name}, {props.id}</h1>
         </div>
-
     )
 }
