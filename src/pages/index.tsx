@@ -31,10 +31,10 @@ export default function Home() {
         {cards.map(card => {
           return(       
             <Card 
-              key={card.id}
+              key={card['@id']} 
               id={card['@id']} 
               name={card['@name']}
-              imageURL={card['_image']['url'] || ""} />
+              imageURL={card['_image'] ?card['_image']['url'] : "" } />
           )
         })}
       </div>
