@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import {createServer} from 'miragejs'
 import { Cards } from '../components/Card/cards';
+import { Header } from '../components/header/header';
 
 createServer({
   routes(){
@@ -18,6 +19,7 @@ export default function Home() {
       <Head>
         <title>Yeah!</title>
       </Head>
+      <Header />
       <Cards />
     </>
   )
