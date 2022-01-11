@@ -13,10 +13,6 @@ export function Cards(){
     .then(data => setCards(data))
     }, [])
 
-
-    const [data, setdata] = useState({});
-
-
     return(
     <div className={styles.cards}>
         {cards.map(card => {

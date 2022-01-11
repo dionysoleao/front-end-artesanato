@@ -2,15 +2,12 @@
     display:grid;
     grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
     gap: 25px;
-    
+    width:70%;
     margin: 0 auto;
 }
 
 .card{
-
-    background:white;
     border-radius: 0.5 50% 0 0;
-
 }
 
 .card__image{
