@@ -1,7 +1,7 @@
 import Head from 'next/head'
-import { Card } from '../components/card'
 import {createServer} from 'miragejs'
 import { useEffect, useState } from 'react';
+import { Cards } from '../components/Card/cards';
 
 createServer({
   routes(){
@@ -14,30 +14,12 @@ createServer({
 
 export default function Home() {
 
-  const [cards, setCards] = useState([]);
-
-  useEffect(() => {
-    fetch('http://localhost:3000/api/1.0/pessoas')
-    .then(response => response.json())
-    .then(data => setCards(data))
-}, [])
-
   return (
     <>
       <Head>
         <title>Yeah!</title>
       </Head>
-      <div className="Cards">
-        {cards.map(card => {
-          return(       
-            <Card 
-              key={card['@id']} 
-              id={card['@id']} 
-              name={card['@name']}
-              imageURL={card['_image'] ?card['_image']['url'] : "" } />
-          )
-        })}
-      </div>
+      <Cards />
     </>
   )
 }
