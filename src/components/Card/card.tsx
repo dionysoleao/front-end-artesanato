@@ -7,10 +7,19 @@ interface CardProps{
 }
 
 export function Card(props: CardProps){
+    if(props.imageURL){
     return(
         <div className={styles.card}>
-            {props.imageURL ? <img src={props.imageURL} /> : <div className={styles.blankImg}></div>}
-            <div></div><h1 className="data"> {props.name}</h1>
+            <div className={styles.card__image}>
+                <img src={props.imageURL} />
+            </div>
+            
+            <div className={styles.card__description}>
+                <h1 className="data"> {props.name}</h1>
+            </div>
         </div>
     )
+} else{
+    return null
+}
 }

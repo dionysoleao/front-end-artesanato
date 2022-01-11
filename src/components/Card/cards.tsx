@@ -16,61 +16,6 @@ export function Cards(){
 
     const [data, setdata] = useState({});
 
-let reqBody = JSON.stringify({
-      "search": {
-        "@type": "CreativeArtworkFurnas",
-        "@status": ["{$content.status.public}", "{$content.status.private}"]
-      },
-      "fields": {
-        "@id": {},
-        "@type": {},
-        "@name": {},
-        ":properties": {
-          "fields": {
-            "@language": {},
-            "@label": {}
-          }
-        },
-        ":relations": {
-          "fields": {
-            "@id":{},
-            "@type":{},
-            "@name":{}, 
-
-          }
-        },
-        "@relations": {
-          "search": {
-            "@type": {
-              "or": [
-                "ImageObject",
-                "VideoObject"
-              ]
-            }
-          },
-          "fields": {
-            "thumbnailUrl": {}
-          },
-          "filter": {
-            "pp": 1,
-            "orderBy": "@.order",
-            "orderDir": "asc"
-          }
-        }
-      },
-      "filter": {
-        "pp": 8,
-        // "orderBy": "@relevance",
-        // "orderDir": "asc",
-      }
-    });
-
-        useEffect(() => {
-    fetch(`https://staging.memoriadaeletricidade.com.br/api/1.0/legacy-query?query=${reqBody}`)
-    .then(response => response.json())
-    .then(data => setData(data), console.log(data))
-    }, [])
-
 
     return(
     <div className={styles.cards}>
