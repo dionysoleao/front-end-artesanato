@@ -1,9 +1,13 @@
 import styles from './styles.module.scss'
+import {Menu} from './menu/menu'
+import { Busca } from './busca/busca'
 
-export function Header () {
+
+export function Header() {
     return (
         <div className={styles.header}>
-            <h1>Header</h1>
+            <Menu />
+            <Busca />
         </div>
     )
 }

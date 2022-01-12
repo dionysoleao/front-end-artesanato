@@ -1,0 +1,46 @@
+.busca {
+    height:inherit;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    z-index:2;
+    top:-4.5rem;
+}
+
+.busca__campo{
+
+}
+.busca__campo___input{
+    background: #CD8F35;
+    border: none;
+    padding:1rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color:#231F20;
+    outline: 0px solid transparent;
+
+    &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color:#231F20;
+        opacity: 1; /* Firefox */
+      }
+      
+    &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color:#231F20;
+      }
+      
+    &::-ms-input-placeholder { /* Microsoft Edge */
+        color:#231F20;
+      }
+    }
+
+.busca__campo___select{
+    background: #231F20;
+    border: none;
+    padding:1rem;
+    border-radius: 10px;
+    color:white;
+    line-height: 1.5rem;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+}
