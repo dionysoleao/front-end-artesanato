@@ -6,6 +6,15 @@
     margin: 0 auto;
 }
 
+.cards__header{
+    margin-top: 2rem;
+    padding:1rem;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    width:75%;
+    margin: 3rem auto 2rem auto;
+}
+
 .card{
     border-radius: 0.5 50% 0 0;
 }
@@ -21,5 +30,6 @@
         width: 100%;
         position: absolute;
         top:0;
+        object-fit: cover;
     }
 }

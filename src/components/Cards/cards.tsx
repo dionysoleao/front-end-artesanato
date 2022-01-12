@@ -14,15 +14,19 @@ export function Cards(){
     }, [])
 
     return(
-    <div className={styles.cards}>
-        {cards.map(card => {
-        return(       
-            <Card 
-            key={card['@id']} 
-            name={card['@name']}
-            imageURL={card['_image'] ? card['_image'][0].url : "" } />
-        )
-        })}
-    </div>
+        <>
+            <h1 className={styles.cards__header}>353 artesãos encontrados</h1>
+            <div className={styles.cards}>
+                {cards.map(card => {
+                return(       
+                    <Card 
+                    key={card['@id']} 
+                    name={card['@name']}
+                    imageURL={card['_image'] ? card['_image'][0].url : "" } />
+                )
+                })}
+            </div>
+        </>
+
   ) 
 }

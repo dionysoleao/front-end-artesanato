@@ -11,7 +11,7 @@ export function Card(props: CardProps){
     return(
         <div className={styles.card}>
             <div className={styles.card__image}>
-                <img src={props.imageURL} />
+                <img className={styles.card__image___img} src={props.imageURL} />
             </div>
             
             <div className={styles.card__description}>
