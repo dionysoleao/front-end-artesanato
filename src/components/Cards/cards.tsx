@@ -8,7 +8,7 @@ export function Cards(){
     const [cards, setCards] = useState([]);
 
     useEffect(() => {
-    fetch('http://localhost:3000/api/1.0/pessoas')
+    fetch('https://61df66c3dde77d6d33aaf15a--xenodochial-kilby-f3a1c4.netlify.app/api/1.0/pessoas')
     .then(response => response.json())
     .then(data => setCards(data))
     }, [])
