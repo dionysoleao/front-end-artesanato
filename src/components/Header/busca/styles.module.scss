@@ -4,38 +4,34 @@
     align-items:center;
     justify-content: center;
     z-index:2;
-    top:-4.5rem;
 }
 
-.busca__campo{
-
-}
 .busca__campo___input{
-    background: #CD8F35;
+    background: var(--yellow-200);
     border: none;
     padding:1rem;
     border-radius: 10px;
     font-size: 1.5rem;
     font-weight: 600;
-    color:#231F20;
+    color: var(--black-800);
     outline: 0px solid transparent;
 
     &::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-        color:#231F20;
+        color:var(--black-800);
         opacity: 1; /* Firefox */
       }
       
     &:-ms-input-placeholder { /* Internet Explorer 10-11 */
-        color:#231F20;
+        color:var(--black-800);
       }
       
     &::-ms-input-placeholder { /* Microsoft Edge */
-        color:#231F20;
+        color:var(--black-800);
       }
     }
 
 .busca__campo___select{
-    background: #231F20;
+    background: var(--black-800);
     border: none;
     padding:1rem;
     border-radius: 10px;

@@ -1,0 +1,37 @@
+.tags {
+    height:6rem;
+    background-color: var(--yellow-200);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tags__content{
+    width: 75%;
+    padding:1rem;
+
+}
+
+.tag {
+    background: var(--yellow-400);
+    color:white;
+    font-size: 1.5rem;
+    padding:1rem;
+    border-radius: 1rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.tag__complement{
+    font-weight: 300;
+    color:var(--yellow-200);
+    margin-left: 1rem;
+    font-size: 1rem;
+}
+
+.tag__complement___close{
+    font-weight: 300;
+    color:white;
+    margin-left: 1rem;
+    font-size: 1rem;
+}
