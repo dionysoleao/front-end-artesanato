@@ -1,0 +1,32 @@
+.artigos__container{
+    background: var(--yellow-100);
+    background-image: url(https://media.istockphoto.com/photos/aged-handmade-bamboo-weave-texture-background-picture-id641938162);
+
+    &:before{
+        content: "";
+        display: block;
+        height:30rem;
+        background: var(--yellow-100);
+        margin-top: -5px;
+    }
+    padding-bottom: 12rem;
+}
+.artigos{
+    margin:0 auto;
+    margin-top:-30rem;
+    width:70%;
+}
+
+.artigos__title{
+    text-transform: uppercase;
+    font-weight: 00;
+    font-size: 2.5rem;
+    padding-top: 8rem;
+    padding-bottom:6rem;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+    grid-gap: 30px;
+}

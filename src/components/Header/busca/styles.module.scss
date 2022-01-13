@@ -1,13 +1,17 @@
 .busca {
     height:inherit;
     display: flex;
-    align-items:center;
+
     justify-content: center;
     z-index:2;
 }
 
+.busca__campo{
+  margin-top: 17rem;
+}
+
 .busca__campo___input{
-    background: var(--yellow-200);
+    background: var(--yellow-100);
     border: none;
     padding:1rem;
     border-radius: 10px;

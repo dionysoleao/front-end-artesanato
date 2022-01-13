@@ -14,7 +14,7 @@ export function Cards(){
     }, [])
 
     return(
-        <>
+        <div className={styles.cards__container}>
             <h1 className={styles.cards__header}>353 artesãos encontrados</h1>
             <div className={styles.cards}>
                 {cards.map(card => {
@@ -26,7 +26,15 @@ export function Cards(){
                 )
                 })}
             </div>
-        </>
+            <div className={styles.slide_balls}>
+                <div className={styles.slide_balls__slideball___selected}></div>
+                <div className={styles.slide_balls__slideball}></div>
+                <div className={styles.slide_balls__slideball}></div>
+                <div className={styles.slide_balls__slideball}></div>
+                
+            </div>
+            <img className={styles.grafico} src="/images/grafico.png" />
+        </div>
 
   ) 
 }

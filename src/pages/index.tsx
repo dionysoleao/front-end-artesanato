@@ -3,6 +3,8 @@ import {createServer} from 'miragejs'
 import { Cards } from '../components/Cards/cards';
 import { Header } from '../components/Header/header';
 import { Tags } from '../components/Tags/tags';
+import { Artigos } from '../components/Artigos/artigos';
+import { Coletaneas } from '../components/Coletaneas/coletaneas';
 
 createServer({
   routes(){
@@ -23,6 +25,8 @@ export default function Home() {
       <Header />
       <Tags />
       <Cards />
+      <Artigos />
+      <Coletaneas />
     </>
   )
 }

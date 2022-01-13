@@ -1,0 +1,32 @@
+
+.card{
+    font-size: 1.5rem;
+    color: var(--brown-200);
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding:2rem;
+    box-sizing: border-box;
+    height:18rem;
+    background: #fff;
+}
+
+.card__title{
+    color:var(--black-800);
+    font-size: 2rem;
+    text-transform: none;
+    font-weight:700;
+}
+
+.card__details{
+    display: flex;
+    font-size: 1.2rem;
+    flex-direction: column;
+    position: absolute;
+    bottom:0;
+}
+
+.card__tecnica{
+    font-weight: 700;
+}
