@@ -1,0 +1,19 @@
+.cards{
+    display:grid;
+    grid-template-columns: repeat(auto-fill, minmax(22rem, 1fr));
+    grid-gap: 30px;
+    padding-bottom: 12rem;
+}
+.coletaneas{
+    margin:0 auto;
+
+    width:70%;
+}
+
+.coletaneas__title{
+    text-transform: uppercase;
+    font-weight: 00;
+    font-size: 2.5rem;
+    padding-top: 8rem;
+    padding-bottom:6rem;
+}

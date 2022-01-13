@@ -1,4 +1,3 @@
-
 .card{
     font-size: 1.5rem;
     color: var(--brown-200);
@@ -10,6 +9,7 @@
     box-sizing: border-box;
     height:18rem;
     background: #fff;
+    border:1px solid var(--black-800)
 }
 
 .card__title{
