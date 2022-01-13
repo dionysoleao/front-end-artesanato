@@ -5,6 +5,7 @@ import { Header } from '../components/Header/header';
 import { Tags } from '../components/Tags/tags';
 import { Artigos } from '../components/Artigos/artigos';
 import { Coletaneas } from '../components/Coletaneas/coletaneas';
+import { Rodape } from '../components/Rodapé/rodape';
 
 createServer({
   routes(){
@@ -27,6 +28,7 @@ export default function Home() {
       <Cards />
       <Artigos />
       <Coletaneas />
+      <Rodape />
     </>
   )
 }
