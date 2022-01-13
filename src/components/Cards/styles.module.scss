@@ -33,3 +33,21 @@
         object-fit: cover;
     }
 }
+
+.card__description{
+    text-align: center;
+}
+
+.description__name{
+    font-size: 1rem;
+}
+
+.description__nickname{
+    font-weight: 300;
+}
+
+.description__local{
+    font-weight: 200;
+    text-transform: uppercase;
+    font-size:0.9rem;
+}

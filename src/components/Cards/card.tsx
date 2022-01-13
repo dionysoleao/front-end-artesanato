@@ -15,7 +15,9 @@ export function Card(props: CardProps){
             </div>
             
             <div className={styles.card__description}>
-                <h1 className="data"> {props.name}</h1>
+                <h2 className={styles.description__name}> {props.name}</h2>
+                <h3 className={styles.description__nickname}>(Ceberé)</h3>
+                <h4 className={styles.description__local}>genipaúba / guimarães</h4>
             </div>
         </div>
     )

@@ -8,7 +8,7 @@ export function Cards(){
     const [cards, setCards] = useState([]);
 
     useEffect(() => {
-    fetch('https://artesanato-plano-b.netlify.app/api/1.0/pessoas')
+    fetch('https://localhost:3000/api/1.0/pessoas')
     .then(response => response.json())
     .then(data => setCards(data))
     }, [])
