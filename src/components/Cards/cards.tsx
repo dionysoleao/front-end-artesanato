@@ -11,7 +11,7 @@ export function Cards(){
     const [cards, setCards] = useState([]);
 
     useEffect(() => {
-    fetch("https://cors-anywhere.herokuapp.com/https://artesanato.plano-b.com/admin/conteudo/@type/Person/@pp/35?format=json", {
+    fetch("https://artesanato.plano-b.com/admin/conteudo/@type/Person/@pp/35?format=json", {
         method: 'GET',
         headers: myHeaders,
         redirect: 'follow'
